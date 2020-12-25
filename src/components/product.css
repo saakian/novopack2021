@@ -1,0 +1,24 @@
+.products {
+  display: flex;
+  width: 100vw;
+  height: 100px;
+  background-color: teal;
+  justify-content: space-around;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* background-color: tomato; */
+  background-color: tomato;
+  width: 100vw;
+}
+.single_items {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  margin: 10px;
+  background-color: white;
+}

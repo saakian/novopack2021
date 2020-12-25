@@ -39,8 +39,8 @@ h5 {
   background-image: url(./assets/background.jpg);
   margin: 0;
   padding: 0;
-
-  padding: 10px 10px;
+  border-bottom: 1.5px solid red;
+  padding: 5px 5px;
 }
 
 .wrap {

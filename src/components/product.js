@@ -1,16 +1,18 @@
 import React from 'react'
+import '../components/product.css'
 
 function product() {
     return (
-        <div>
-            <ul>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li></ul>      
+        <div className="products">
+            <div className="items">
+                <div className="single_items">θερμοσυρρικνωση</div>
+                <div className="single_items">θερμοσυρρικνωση</div>
+                <div className="single_items">θερμοσυρρικνωση</div>
+                <div className="single_items">θερμοσυρρικνωση</div>
+                <div className="single_items">θερμοσυρρικνωση</div>
+                <div className="single_items">θερμοσυρρικνωση</div>
+                <div className="single_items">θερμοσυρρικνωση</div>
+            </div>
         </div>
     )
 }
