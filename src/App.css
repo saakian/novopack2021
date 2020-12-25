@@ -1,38 +1,168 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+@import url("http://fonts.cdnfonts.com/css/levenim-mt");
+* {
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1 {
+  font-family: "Levenim MT", sans-serif;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(12, 74, 124);
+  padding: 2px 25px;
+  /* border: 2px solid red; */
+  border-top-left-radius: 0px;
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  /* border-top: 2px solid red; */
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
 }
 
-.App-link {
-  color: #61dafb;
+h5 {
+  color: rgb(255, 255, 255);
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 5px;
+  font-family: "Inter", sans-serif;
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: 5px;
+  margin-left: 18px;
+  font-size: 11px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App {
+}
+
+.nav_background {
+  background-image: url(./assets/background.jpg);
+  margin: 0;
+  padding: 0;
+
+  padding: 10px 10px;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  display: flex;
+  padding-right: 11px;
+}
+
+li {
+  display: flex;
+  padding: 5px 10px;
+  margin: 0px 6px;
+  border: 0.7px solid white;
+  border-radius: 5px;
+  background-color: rgb(12, 74, 124);
+  color: white;
+  cursor: pointer;
+}
+li:hover {
+  display: flex;
+  padding: 5px 10px;
+  margin: 0px 6px;
+  border: 0.7px solid rgb(253, 19, 19);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(12, 74, 124);
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  transition: 0.3s ease-out;
+}
+
+h3 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-left: 9px;
+  font-family: "Inter", sans-serif;
+}
+
+.ham {
+  display: none;
+}
+
+.translation {
+  color: rgb(12, 74, 124);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px 10px;
+}
+
+@media screen and (max-width: 1210px) {
+  h3 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9px;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
   }
-  to {
-    transform: rotate(360deg);
+  .ham {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .ham {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-left: 25px;
+    padding: 10px 10px;
+    border-left: 3px solid white;
+    /* margin-left: 10px; */
+    background-color: #114a79;
+    color: white;
+  }
+
+  .wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul {
+    display: none;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    padding-right: 11px;
+  }
+
+  li {
+    display: none;
+    padding: 5px 10px;
+    margin: 0px 6px;
+    border: 0.7px solid white;
+    border-radius: 5px;
+    background-color: #1764a1;
+    color: white;
+    cursor: pointer;
+  }
+
+  h3 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9px;
+    font-family: "Inter", sans-serif;
   }
 }
